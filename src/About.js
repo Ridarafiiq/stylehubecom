@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import { useProductContext } from "./context/productcontex";
+import Aboutt from "./components/Aboutt";
 
 const About = () => {
   const { myName } = useProductContext();
@@ -10,8 +11,11 @@ const About = () => {
 
   return (
     <>
+     
       {myName}
       <HeroSection myData={data} />
+      
+      <Aboutt />
     </>
   );
 };

@@ -27,8 +27,8 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-four-column">
             <div className="footer-about">
-              <h3>Style Hub </h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <h3><b>STYLE HUB</b></h3>
+              <p>Where Fashion meets Expression. </p>
             </div>
             <div className="footer-subscribe">
               <h3>Subscribe to get important updates</h3>

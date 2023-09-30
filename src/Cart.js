@@ -9,6 +9,10 @@ const Cart = () => {
   const { cart, clearCart, total_price, shipping_fee } = useCartContext();
   // console.log("🚀 ~ file: Cart.js ~ line 6 ~ Cart ~ cart", cart);
 
+  if (cart === null) {
+    return <div>Loading...</div>; // or some other loading state
+  }
+
   if (cart.length === 0) {
     return (
       <EmptyDiv>

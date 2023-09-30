@@ -14,9 +14,7 @@ const HeroSection = ({ myData }) => {
             <p className="intro-data">Welcome to </p>
             <h1> {name}</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              atque temporibus veniam doloribus libero ad error omnis voluptates
-              animi! Suscipit sapiente.
+            Discover the latest trends in women's, men's, and kids' clothing, all in one place. From chic and sophisticated styles for women to dapper looks for men and adorable outfits for the little ones, we've curated a diverse collection to suit every taste and occasion. Explore our wide range of high-quality apparel designed to keep you stylish and comfortable. Happy shopping!
             </p>
             <NavLink>
               <Button>show now</Button>
@@ -49,6 +47,7 @@ const Wrapper = styled.section`
   .hero-section-data {
     p {
       margin: 2rem 0;
+      text-align: justify;
     }
 
     h1 {

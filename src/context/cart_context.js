@@ -5,11 +5,11 @@ const CartContext = createContext();
 
 const getLocalCartData = () => {
   let localCartData = localStorage.getItem("StyleHubCart");
-  if (localCartData === []) {
-    return [];
-  } else {
-    return JSON.parse(localCartData);
-  }
+if (localCartData === null || localCartData === "") {
+  return [];
+} else {
+  return JSON.parse(localCartData);
+}
 };
 
 const initialState = {
