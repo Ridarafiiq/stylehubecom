@@ -10,7 +10,7 @@ const Cart = () => {
   // console.log("🚀 ~ file: Cart.js ~ line 6 ~ Cart ~ cart", cart);
 
   if (cart === null) {
-    return <div>Loading...</div>; // or some other loading state
+    return <div>Loading...</div>; 
   }
 
   if (cart.length === 0) {
