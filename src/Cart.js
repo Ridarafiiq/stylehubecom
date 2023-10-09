@@ -21,6 +21,7 @@ const Cart = () => {
     );
   }
 
+  
   return (
     <Wrapper>
       <div className="container">
