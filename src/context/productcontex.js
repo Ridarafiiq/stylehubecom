@@ -4,7 +4,7 @@ import reducer from "../reducer/productReducer";
 
 const AppContext = createContext();
 
-const API = "http://54.164.166.238:5000/products";
+const API = "http://3.84.168.215:5000/products";
 const initialState = {
   isLoading: false,
   isError: false,
