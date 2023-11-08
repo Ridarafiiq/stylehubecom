@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import styled from "styled-components";
-import { useParams } from "react-router-dom";
-import { useProductContext } from "./context/productcontex";
+//import { useParams } from "react-router-dom";
+//import { useProductContext } from "./context/productcontex";
 import PageNavigation from "./components/PageNavigation";
 import MyImage from "./components/MyImage";
 import { Container } from "./styles/Container";
@@ -13,7 +13,7 @@ import AddToCart from "./components/AddToCart";
 import { useFilterContext } from "./context/filter_context";
 import { useState } from "react";
 
-const API = "http://3.84.168.215:5000/products";
+const API = "http://52.3.251.145:5000/products";
 
 const SingleProduct = () => {
   // const { getSingleProduct, isSingleLoading, singleProduct } =
@@ -33,7 +33,7 @@ const SingleProduct = () => {
     if(filter_products){
       const product = filter_products?.filter(ele=>{
         console.log(ele.id)
-        return ele.id == window.location.pathname.split("/")[2] ? true : false;
+        return ele.id === window.location.pathname.split("/")[2] ? true : false;
       })
       setSingleProduct(product[0] ?? {})
     }
