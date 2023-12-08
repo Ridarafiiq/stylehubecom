@@ -9,7 +9,7 @@ import Slider from "./components/Slider";
 const Home = () => {
 
   const data = {
-    name: "STYLE HUB ECOMMERCE",
+    name: "STYLE HUB",
   };
 
   return (
