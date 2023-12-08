@@ -4,7 +4,8 @@ const cartReducer = (state, action) => {
 
     // tackle the existing product
 
-    let existingProduct = state.cart.find(
+    console.log(state)
+    let existingProduct = state?.cart?.find(
       (curItem) => curItem.id === id + color
     );
 
@@ -34,14 +35,14 @@ const cartReducer = (state, action) => {
         name: product.name,
         color,
         amount,
-        image: product.image[0].url,
+        image:  product?.image?.length > 0 && product?.image[0].url,
         price: product.price,
         max: product.stock,
       };
 
       return {
         ...state,
-        cart: [...state.cart, cartProduct],
+        cart: [ ...(state?.cart?.length > 0 ? state?.cart : []), cartProduct],
       };
     }
   }

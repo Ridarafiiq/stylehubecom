@@ -13,7 +13,7 @@ import AddToCart from "./components/AddToCart";
 import { useFilterContext } from "./context/filter_context";
 import { useState } from "react";
 
-const API = "http://54.152.122.12:5000/products";
+const API = "http://54.85.171.185:5000/products";
 
 const SingleProduct = () => {
   // const { getSingleProduct, isSingleLoading, singleProduct } =
@@ -32,8 +32,8 @@ const SingleProduct = () => {
   
     if(filter_products){
       const product = filter_products?.filter(ele=>{
-        console.log(ele.id)
-        return ele.id === window.location.pathname.split("/")[2] ? true : false;
+        console.log(ele.id,window.location.pathname.split("/")[2])
+        return ele.id == window.location.pathname.split("/")[2] ? true : false;
       })
       setSingleProduct(product[0] ?? {})
     }
