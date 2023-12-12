@@ -17,7 +17,7 @@ const HeroSection = ({ myData }) => {
             Discover the latest trends in women's, men's, and kids' clothing, all in one place. From chic and sophisticated styles for women to dapper looks for men and adorable outfits for the little ones, we've curated a diverse collection to suit every taste and occasion. Explore our wide range of high-quality apparel designed to keep you stylish and comfortable. Happy shopping!
             </p>
             <NavLink>
-              <Button>show products</Button>
+              <Button>Shop now</Button>
             </NavLink>
           </div>
           {/* our homepage image  */}
