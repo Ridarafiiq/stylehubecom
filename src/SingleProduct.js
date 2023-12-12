@@ -13,7 +13,7 @@ import AddToCart from "./components/AddToCart";
 import { useFilterContext } from "./context/filter_context";
 import { useState } from "react";
 
-const API = "http://54.85.171.185:5000/products";
+const API = "http://52.201.229.91:5000/products";
 
 const SingleProduct = () => {
   // const { getSingleProduct, isSingleLoading, singleProduct } =
