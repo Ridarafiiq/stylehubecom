@@ -5,7 +5,7 @@ import reducer from "../reducer/productReducer";
 const AppContext = createContext();
 
 
-const API = "http://52.201.229.91:5000/products";
+const API = "http://35.175.102.147:5000/products";
 const initialState = {
   isLoading: false,
   isError: false,
